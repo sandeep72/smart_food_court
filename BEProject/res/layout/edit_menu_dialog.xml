@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:padding="10dp"
+    android:background="@drawable/customshapefordialog">
+
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:weightSum="3">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+         >
+
+       
+    </EditText>
+</LinearLayout>
+
+    
+ <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Price" />
+
+    <EditText
+        android:id="@+id/priceEditText"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+         />
+</LinearLayout>
+
+ <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Description" />
+
+    <EditText
+        android:id="@+id/descriptionEditText"
+        android:layout_width="0dp"
+        android:layout_height="108dp"
+        android:layout_weight="2.00" />
+
+</LinearLayout>
+
+  <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="3" >
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Save" 
+        android:background="@drawable/stylish"
+        android:textColor="#41220b"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Delete" 
+        android:background="@drawable/stylish"
+        android:textColor="#41220b"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="cancel" 
+        android:background="@drawable/stylish"
+        android:textColor="#41220b"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+</LinearLayout>
+</LinearLayout>

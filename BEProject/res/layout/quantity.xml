@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:paddingTop="20dp"
+    >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_toRightOf="@+id/button1"
+      	android:inputType="number"
+        android:ems="10"
+       
+        >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignRight="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:text="ok" 
+         android:background="@drawable/stylish"
+         android:layout_marginTop="15dp"
+         android:textColor="#41220b"
+         android:textStyle="bold"
+        
+    />
+
+    
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText1"
+        android:layout_toRightOf="@+id/editText1"
+        android:background="@drawable/stylish"
+        android:text="-"
+        android:textColor="#4122bb"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="42dp"
+        android:background="@drawable/stylish"
+        android:text="+"
+        
+        android:textColor="#4122bb"
+        android:textStyle="bold" />
+
+</RelativeLayout>

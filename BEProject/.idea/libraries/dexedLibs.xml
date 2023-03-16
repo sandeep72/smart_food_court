@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="dexedLibs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/google-play-services_lib-ae9e1ddd7ca75d8e514e81b9dfa933b3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/android-support-v4-f499e87b3fc578c662bdc79e4c39f558.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/achartengine-1.0.0-981053d97b5a5e6ba9915657294feddc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/swipelistview-50f95efe1a7df59b14627d4728820df4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/google-play-services-3b4cc3109a09da02d5ddfb1d87e409d0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/nineoldandroids-2.4.0-d94a721187cc47b7b815d38338ef38fd.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

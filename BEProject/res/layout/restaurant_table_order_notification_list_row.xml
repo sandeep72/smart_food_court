@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    
+    >
+<RelativeLayout
+    android:id="@+id/back"
+            android:tag="back"
+            style="@style/MyListBackContent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/customshapeforcustomertableorder">
+
+    <TableLayout 
+                    android:stretchColumns="0,1"
+                    android:id="@+id/main_table" 
+                    android:layout_weight="1" 
+                    android:layout_height="wrap_content" 
+                    android:layout_width="match_parent"
+            android:paddingTop="15dp"
+            
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true">
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/main_table"
+        android:layout_below="@+id/main_table"
+        android:layout_marginTop="31dp"
+        android:text="Amount" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="17dp"
+        android:text="Type of Payment" />
+
+    <TextView
+        android:id="@+id/TypeOfPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_marginLeft="34dp"
+        android:layout_toRightOf="@+id/TotalAmount" />
+
+    <TextView
+        android:id="@+id/TotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_marginLeft="26dp"
+        android:layout_toRightOf="@+id/textView4" />
+
+</RelativeLayout>
+    
+
+ <LinearLayout
+     
+    android:id="@+id/front"
+    style="@style/MyListFrontContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:tag="front"
+    android:background="@drawable/customshapeforcustomertableorder"
+    android:padding="10dp"  
+                >
+   <!--   android:background="@drawable/restaurantrowstyleformenulist">-->
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:weightSum="2">
+    <TextView
+       
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        
+        android:layout_height="wrap_content"
+        android:text="Table Order ID :" />
+    
+    <TextView
+        android:id="@+id/tableOrderIdTextView"
+         android:layout_width="0dp"
+        
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+    </LinearLayout>
+	<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2"  >
+    <TextView
+         android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Customer Name :" />
+    
+    
+    <TextView
+        android:id="@+id/tableOrderCustomerNameTextView"
+         android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+    </LinearLayout>
+	<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:weightSum="2" >
+    <TextView
+        
+         android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Customer Phone :" />
+
+    <TextView
+        android:id="@+id/tableOrderCustomerPhoneTextView"
+         android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+    </LinearLayout>
+	<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:weightSum="2" >
+
+    <TextView
+         android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="No of Guests :" />
+
+    <TextView
+        android:id="@+id/tableOrderNoOfSeatsTextView"
+         android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+    </LinearLayout>
+	<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:weightSum="2" >
+    <TextView
+       
+         android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Time :" />
+
+    <TextView
+        android:id="@+id/tableOrderTimeTextView"
+         android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+    </LinearLayout>
+	<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:weightSum="2" >
+    <TextView
+        
+         android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Date :" />
+
+    <TextView
+        android:id="@+id/tableOrderDateTextView"
+         android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:weightSum="2" >
+	<TextView
+	    android:id="@+id/textView1"
+	     android:layout_width="0dp"
+        android:layout_weight="1"
+	    android:layout_height="wrap_content"
+	    android:text="Customer Id  :" />
+
+	<TextView
+	    android:id="@+id/tableOrderCustomerIdTextView"
+	     android:layout_width="0dp"
+        android:layout_weight="1"
+	    android:layout_height="wrap_content"
+	    android:text="TextView" />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2" >
+<TextView
+    android:id="@+id/textView2"
+     android:layout_width="0dp"
+        android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:text="Status" />
+
+<TextView
+    android:id="@+id/tableOrderFlagTextView"
+     android:layout_width="0dp"
+        android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:text="TextView" />
+</LinearLayout>
+<Button
+    android:id="@+id/restaurantTableOrderConfirmButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Confirm?" 
+    android:background="@drawable/stylish"
+        android:textColor="#41220b"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+    />
+
+</LinearLayout>
+
+
+</FrameLayout>

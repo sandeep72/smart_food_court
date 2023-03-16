@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true"
+  android:background="#E0FFFF"
+  
+
+  >    
+      
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+    
+     
+    >
+     
+    
+    
+    
+     <TableLayout 
+                    android:stretchColumns="0,1"
+                    android:id="@+id/main_table" 
+                    android:layout_weight="1" 
+                    android:layout_height="wrap_content" 
+                    android:layout_width="match_parent">
+            </TableLayout>
+    
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_weight="3"
+    android:layout_marginTop="15dp"
+     >
+    
+    <TextView
+        android:layout_weight="2"
+        android:id="@+id/totalLabelTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Total Amount Rs:" />
+
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/totalPriceTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+    
+    <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="10dip">
+          <!-- Card Number Label -->
+          <Spinner
+    				android:id="@+id/card_spinner"
+    				android:layout_width="match_parent"
+    				android:layout_height="wrap_content" />
+          
+          <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="Card Number"/>
+          
+          <EditText android:id="@+id/customer_cardno"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:inputType="number"
+                android:maxLength="16"
+                android:layout_marginBottom="20dip"/>
+          
+          <!-- CVV Label -->
+          <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="3-digit CVV"/>
+          <EditText android:id="@+id/customer_cvvnumber"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:inputType="number"
+                android:maxLength="3"
+                android:layout_marginBottom="20dip"/>
+          
+         
+          
+          <!--  Pay Amount Label -->
+          <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="Payment of Rs."/>
+          <TextView android:id="@+id/customer_payAmount"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip"/>
+          
+           <!-- Pin No Label -->
+          <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="Pin Number"/>
+          <EditText android:id="@+id/customer_pinNo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:password="true"
+                android:inputType="numberPassword"
+                android:maxLength="4"
+                android:layout_marginBottom="20dip"/>
+          
+          <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="Expiry Date"/>
+          
+          <LinearLayout 
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+          	<Spinner
+    				android:id="@+id/month_spinner"
+    				android:layout_width="wrap_content"
+    				android:layout_height="wrap_content" 
+    				/>
+          	<Spinner
+    				android:id="@+id/year_spinner"
+    				android:layout_width="wrap_content"
+    				android:layout_height="wrap_content" />
+          </LinearLayout>
+          
+        </LinearLayout>
+    <Button
+        android:id="@+id/placeFoodOrderButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Place Order" 
+        android:background="@drawable/stylish"
+        
+        		android:textColor="#41220b"
+        		android:textStyle="bold"/>
+    </LinearLayout>
+
+</ScrollView>

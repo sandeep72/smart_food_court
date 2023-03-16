@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+   
+    android:background="#f0eae0">
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView1"
+        android:lines="5"
+        android:textColor="#0000CD" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:text="Review Text" />
+
+    <RatingBar
+        android:id="@+id/ambienceRating"
+        style="@style/foodRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/customerAmbienceTextView"
+        android:layout_alignRight="@+id/button1"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:stepSize="0.1" />
+
+    <TextView
+        android:id="@+id/customerAmbienceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="17dp"
+        android:text="Ambience" />
+
+    <TextView
+        android:id="@+id/customerTypeOfPaymentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/customerAmbienceTextView"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/editText1"
+        android:text="Service" />
+
+    <TextView
+        android:id="@+id/customerServiceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/customerTypeOfPaymentTextView"
+        android:layout_below="@+id/customerTypeOfPaymentTextView"
+        android:layout_marginTop="18dp"
+        android:text="Value For Money" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/customerServiceTextView"
+        android:layout_below="@+id/customerServiceTextView"
+        android:layout_marginTop="18dp"
+        android:text="Food" />
+
+    <RatingBar
+        android:id="@+id/serviceRating"
+        style="@style/foodRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ambienceRating"
+        android:layout_alignTop="@+id/customerTypeOfPaymentTextView" 
+        android:isIndicator="false"
+        android:numStars="5"
+        android:stepSize="0.1" />
+
+    <RatingBar
+        android:id="@+id/valueForMoneyRating"
+        style="@style/foodRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/serviceRating"
+        android:layout_alignTop="@+id/customerServiceTextView" 
+        android:isIndicator="false"
+        android:numStars="5"
+        android:stepSize="0.1" />
+
+    <RatingBar
+        android:id="@+id/foodRating"
+        style="@style/foodRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/valueForMoneyRating"
+        android:layout_alignTop="@+id/textView5" 
+        android:isIndicator="false"
+        android:numStars="5"
+        android:stepSize="0.1" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="44dp"
+        android:layout_toRightOf="@+id/customerAmbienceTextView"
+        android:background="@drawable/stylish"
+        android:text="ADD REVIEW"
+        android:textColor="#41220b"
+        android:textStyle="bold" />
+
+</RelativeLayout>

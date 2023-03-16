@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:paddingTop="15dp"
+    android:paddingLeft="15dp"
+    android:paddingBottom="15dp"
+    android:paddingRight="15dp"
+    android:background="@drawable/customshapeforcustomertableorder"
+    >
+    
+      
+<!--  
+   <LinearLayout android:paddingTop="10dp"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:weightSum="3"> 
+    -->
+    
+   <!--  
+
+   <LinearLayout android:paddingTop="10dp"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:weightSum="3">
+-->
+    
+
+<!--  
+      <LinearLayout android:paddingTop="10dp"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:weightSum="3">
+ -->
+
+<TextView
+    android:id="@+id/customerNametextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/customerTypeOfPaymentTextView"
+    android:layout_alignBottom="@+id/customerTypeOfPaymentTextView"
+    android:layout_alignLeft="@+id/customerNotextView"
+    android:text="TextView" />
+
+
+    <TableLayout 
+                    android:stretchColumns="0,1"
+                    android:id="@+id/main_table" 
+                    android:layout_weight="1" 
+                    android:layout_height="wrap_content" 
+                    android:layout_width="match_parent"
+            android:paddingTop="15dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true">
+    </TableLayout>
+
+<TextView
+    android:id="@+id/customerServiceTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/customerTypeOfPaymentTextView"
+    android:layout_alignRight="@+id/customerAmbienceTextView"
+    android:layout_below="@+id/customerTypeOfPaymentTextView"
+    android:layout_marginTop="14dp"
+    android:text="Date" />
+
+<TextView
+    android:id="@+id/orderDateTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/customerServiceTextView"
+    android:layout_alignBottom="@+id/customerServiceTextView"
+    android:layout_alignRight="@+id/customerNametextView"
+    android:text="TextView" />
+
+<TextView
+    android:id="@+id/orderTimeTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/orderDateTextView"
+    android:layout_alignLeft="@+id/restaurantOrderDeleteButton"
+    android:text="TextView" />
+
+<TextView
+    android:id="@+id/customerNotextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/amounttextView"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:text="TextView" />
+
+<TextView
+    android:id="@+id/customerAmbienceTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/customerNotextView"
+    android:layout_alignBottom="@+id/customerNotextView"
+    android:layout_alignLeft="@+id/textView1"
+    android:text="Phone No." />
+
+<TextView
+    android:id="@+id/amounttextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/textView1"
+    android:layout_alignBottom="@+id/textView1"
+    android:layout_alignLeft="@+id/customerNametextView"
+    android:text="TextView" />
+
+<TextView
+    android:id="@+id/customerTypeOfPaymentTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/customerAmbienceTextView"
+    android:layout_below="@+id/customerAmbienceTextView"
+    android:layout_marginTop="16dp"
+    android:text="Name" />
+
+<TextView
+    android:id="@+id/orderId"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/textView3"
+    android:layout_alignBottom="@+id/textView3"
+    android:layout_alignLeft="@+id/orderDateTextView"
+    android:text="TextView" />
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/customerServiceTextView"
+    android:layout_below="@+id/customerServiceTextView"
+    android:layout_marginTop="21dp"
+    android:text="Type Of Payment" />
+
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/textView2"
+    android:layout_below="@+id/textView2"
+    android:layout_marginTop="18dp"
+    android:text="Order Id :" />
+
+<TextView
+    android:id="@+id/orderTypeOfPaymentTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/textView2"
+    android:layout_alignBottom="@+id/textView2"
+    android:layout_alignLeft="@+id/orderTimeTextView"
+    android:text="TextView" />
+
+<Button
+    android:id="@+id/restaurantOrderDeleteButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignRight="@+id/main_table"
+    android:layout_below="@+id/main_table"
+    android:background="@drawable/stylish"
+    android:focusable="false"
+    android:text="Delete"
+    android:layout_marginTop="15dp"
+    android:textColor="#41220b"
+    android:textStyle="bold" />
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/main_table"
+    android:layout_alignTop="@+id/restaurantOrderDeleteButton"
+    android:text="Total Amount" />
+
+</RelativeLayout>

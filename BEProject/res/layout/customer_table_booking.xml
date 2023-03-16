@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/customer_main_background"
+     >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:alpha="0.50"
+    android:padding="25dp"
+     >
+    
+    <Button
+        android:id="@+id/customerAllTableOrdersListButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show All Table Orders" 
+        android:background="@drawable/stylish"
+        android:layout_marginBottom="20dp"
+        android:textColor="#41220b"
+        android:textStyle="bold"/>
+	
+    <Spinner
+         android:id="@+id/customerTableOrderDateSpinner"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="15dp"
+          />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        >"
+
+        <TextView
+            android:id="@+id/noOfSeatsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No. Of Guests : " />
+
+        <EditText
+            android:id="@+id/noOfSeatsEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+       
+    </LinearLayout>
+
+    
+
+    <TimePicker
+        android:id="@+id/tableOrderTimingtTimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+   		android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+       />
+     
+     <Button
+        android:id="@+id/customerBookTableButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_gravity="center"
+        android:text="Book Table" 
+         android:background="@drawable/stylish"
+    
+        android:textColor="#41220b"
+        android:textStyle="bold" 
+        />
+
+    </LinearLayout>
+
+</ScrollView>

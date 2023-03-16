@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/customer_main_background"
+    android:padding="15dp" 
+    android:weightSum="2">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="horizontal"
+    android:gravity="bottom"
+    android:layout_weight="1" 
+    android:weightSum="3"
+> 
+   <TextView
+        android:id="@+id/textView1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="New Category :" />
+
+    <EditText
+        android:id="@+id/categoryNameEditText"
+        android:layout_width="0dp"
+         android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+        
+    </EditText>
+</LinearLayout>
+    <Button
+        
+        android:id="@+id/addNewCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/stylish"
+        android:textColor="#41220b"
+        android:textStyle="bold"
+        android:text="Add Category" />
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/customer_main_background"
+     >
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:paddingTop="15dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="5dp"
+    android:background="#000000"
+    android:alpha="0.75">
+	
+    <Button
+        android:id="@+id/showNearbyRestaurantsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="Show Nearby Restaurants" 
+        android:background="@drawable/customerspecialitypagebutton"
+    	android:alpha="1"
+        android:textColor="#41220b"
+        android:textStyle="bold" ></Button>
+    
+    <Button
+        android:id="@+id/customerAfterLoginReviewComparisonButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Compare Restaurants" 
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/customerspecialitypagebutton"
+        android:alpha="1"
+        android:textColor="#41220b"
+        android:textStyle="bold" />
+    
+    <Button
+        android:id="@+id/goToCompleteListOfRestaurantsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+          android:layout_marginTop="5dp"
+        android:background="@drawable/customerspecialitypagebutton"
+        android:alpha="1"
+        android:textColor="#41220b"
+        android:textStyle="bold" 
+        android:text="All Restaurants" />
+
+    <TextView android:text="All Collections"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:layout_marginTop="15dp"/>
+    
+            <ListView
+                android:id="@+id/specialityButtonsListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:textAlignment="inherit"
+                >
+            </ListView>
+
+   
+</LinearLayout>
+</LinearLayout>

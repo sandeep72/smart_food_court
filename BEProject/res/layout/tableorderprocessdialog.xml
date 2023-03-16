@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" " />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/stylish"
+        android:text="Confirm Order"
+        android:textColor="#41220b"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/stylish"
+        android:text="Cancel Order"
+        android:textColor="#41220b"
+        android:textStyle="bold" />
+</LinearLayout>
+
+</LinearLayout>

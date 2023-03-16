@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0eae0" >
+
+    <Button
+        android:id="@+id/proceedToOrderPaymentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proceed"
+        android:background="@drawable/stylish"
+        android:textColor="#41220b"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/customerRestaurantMenuListView"
+        android:layout_width="fill_parent"
+        android:layout_height="326dp"
+        android:choiceMode="multipleChoice"
+        android:drawSelectorOnTop="false" >
+    </ListView>
+
+</LinearLayout>

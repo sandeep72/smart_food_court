@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ 
+    android:orientation="vertical" >
+    
+    <TextView   android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="100dp"
+                android:paddingBottom="30dp"
+                
+                android:text="You are a ?"
+                
+                 android:textColor="#ffffff"
+        android:textStyle="bold" 
+                />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/buttonCustomerRegister"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stylish"
+
+        android:textColor="#41220b"
+        android:textStyle="bold" 
+        android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Customer" />
+
+        <Button
+            android:id="@+id/buttonRestaurantRegister"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/stylish"
+      
+        android:textColor="#41220b"
+        android:textStyle="bold" 
+     
+            android:layout_weight="1"
+            android:text="Restaurant" />
+    </LinearLayout>
+
+     <LinearLayout	android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+    				android:layout_gravity="center"
+    				android:orientation="horizontal" 
+    				android:weightSum="2"
+    				android:paddingTop="30dp">
+     <Button 	android:id="@+id/buttonCustomerHome"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/stylish"
+    
+        android:textColor="#41220b"
+        android:textStyle="bold" 
+        android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                
+                android:layout_marginTop="10dip"
+                android:text="Custormer Home"/>
+     
+      <Button
+          android:id="@+id/buttonRestaurantHome"
+          android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/stylish"
+       
+        android:textColor="#41220b"
+        android:textStyle="bold" 
+        android:layout_gravity="center"
+          android:layout_height="wrap_content"
+         
+          android:layout_marginTop="10dip"
+          android:text="Restaurant Home" />
+     
+     </LinearLayout>
+
+    
+</LinearLayout>

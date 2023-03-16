@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/customer_main_background"
+    >
+
+    
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff"
+    android:alpha="0.55"
+    android:padding="10dp"
+    >
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restaurant 1 :"
+        android:textStyle="italic" />
+
+
+    <AutoCompleteTextView
+        android:id="@+id/customerRestaurant1AutoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter 1st Restaurant Name"
+        android:completionThreshold="1"
+      
+        />
+
+    <TextView
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restaurant 2 :"
+        android:textStyle="italic" />
+
+    <AutoCompleteTextView
+        android:id="@+id/customerRestaurant2AutoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter 2nd Restaurant Name"
+        android:completionThreshold="1"
+         />
+
+    <TextView
+       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restaurant 3 :" 
+        android:textStyle="italic"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/customerRestaurant3AutoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Leave Empty for Not Comparing"
+        android:completionThreshold="1"
+         />
+
+    <TextView
+       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restaurant 4 :"
+        android:textStyle="italic" />
+
+    <AutoCompleteTextView
+        android:id="@+id/customerRestaurant4AutoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Leave Empty for Not Comparing"
+        android:completionThreshold="1"
+         />
+
+    <Button
+        android:id="@+id/customerRestaurantRatingCompareRatingButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="COMPARE"
+      	android:layout_marginTop="15dp"
+        android:background="@drawable/customerspecialitypagebutton"
+        android:alpha="50"
+        android:textColor="#41220b"
+        android:textStyle="bold" />
+</LinearLayout>
+</LinearLayout>

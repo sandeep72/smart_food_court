@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="5dp"
+    android:background="@drawable/customshapeformenuview">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        
+        android:scaleType="fitXY"
+        android:src="@drawable/no_image_available" 
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/customerMenuItemNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_toRightOf="@+id/imageView1"
+        android:paddingBottom="5dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/customerMenuItemDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/customerMenuItemNameTextView"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/customerMenuItemPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/customerMenuItemNameTextView"
+        android:layout_marginRight="18dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/customerMenuItemPriceTextView"
+        android:layout_alignBottom="@+id/customerMenuItemPriceTextView"
+        android:layout_toLeftOf="@+id/customerMenuItemPriceTextView"
+        android:text="Rs." />
+
+</RelativeLayout>

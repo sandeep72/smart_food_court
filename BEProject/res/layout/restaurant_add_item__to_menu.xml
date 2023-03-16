@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/customer_main_background"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:alpha="0.50"
+    android:padding="25dp"
+    >
+    
+<LinearLayout android:paddingTop="10dp"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:weightSum="3">
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="NAME"
+        android:layout_weight="1" />
+    <EditText
+        android:id="@+id/itemName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+         android:layout_weight="2" >
+        <requestFocus />
+      
+        </EditText>
+    </LinearLayout>    
+<LinearLayout 
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:weightSum="3">
+    
+    
+    <TextView
+        android:id="@+id/customerAmbienceTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="PRICE : Rs." 
+         android:inputType="number"
+        android:layout_weight="1" />
+
+    <EditText
+        android:id="@+id/itemPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_weight="2"  />
+    </LinearLayout>
+  <LinearLayout 
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:weightSum="3">  
+    
+    <TextView
+        android:id="@+id/customerTypeOfPaymentTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="CATEGORY" 
+        android:layout_weight="1"/>
+
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" 
+        android:layout_weight="2"/>
+    
+</LinearLayout>
+    <LinearLayout 
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:weightSum="3">  
+    
+    <TextView
+        android:id="@+id/customerServiceTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:layout_weight="1" />
+
+    <EditText
+        android:id="@+id/itemDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_weight="2" >
+
+        
+    </EditText>
+
+    
+</LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+       
+         android:src="@drawable/ic_launcher" 
+         android:layout_gravity="center"
+         android:layout_width="100dp"
+         android:layout_height="120dp"
+         android:scaleType="fitXY"
+         android:alpha="1"
+          />
+
+    <Button
+        android:id="@+id/getImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Image"
+        android:textColor="#41220b"
+        android:textStyle="bold"
+        android:shadowRadius="5" 
+        android:background="@drawable/stylish"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/addItemToMenuButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/stylish"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:shadowRadius="5"
+        android:text="Add To Menu"
+        android:textColor="#41220b"
+        android:textStyle="bold" />
+
+</LinearLayout>
+</LinearLayout>
